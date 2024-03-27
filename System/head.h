@@ -2,7 +2,11 @@
 #define __HEAD_H
 
 #include "stm32f10x.h"
-#include "gpio.h"
-#include "Servo.h"
-
+#include "sys.h"
+#include "oled.h"
+#include "delay.h"
+#include "Motor.h"
+#include "blue_tooth.h"
+#include "OpenMv.h"
+#include "ServoFuntion.h"
 #endif
