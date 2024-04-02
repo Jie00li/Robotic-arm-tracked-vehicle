@@ -13,11 +13,11 @@
 #define Y_WIDTH 	64	    						  
 //-----------------OLED IIC端口定义----------------  					   
 
-#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOB,GPIO_Pin_6)//SCL
-#define OLED_SCLK_Set() GPIO_SetBits(GPIOB,GPIO_Pin_6)
+#define OLED_SCLK_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_0)//SCL
+#define OLED_SCLK_Set() GPIO_SetBits(GPIOA,GPIO_Pin_0)
 
-#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOB,GPIO_Pin_7)//SDA
-#define OLED_SDIN_Set() GPIO_SetBits(GPIOB,GPIO_Pin_7)
+#define OLED_SDIN_Clr() GPIO_ResetBits(GPIOA,GPIO_Pin_1)//SDA
+#define OLED_SDIN_Set() GPIO_SetBits(GPIOA,GPIO_Pin_1)
 
  		     
 #define OLED_CMD  0	//写命令

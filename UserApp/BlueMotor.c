@@ -57,37 +57,42 @@ void BT_Control(void)//蓝牙控制
 		}
 		if((Fore==1)&&(Back==0)&&(Left==0)&&(Right==0))//前进
 		{
-				Motor_LEFT_Speed(70);
-			  Motor_RIGHT_Speed(70);
+				Motor_LEFT_Speed(-2000);
+			  Motor_RIGHT_Speed(-2000);
 		}
 		if((Fore==0)&&(Back==1)&&(Left==0)&&(Right==0))//后退
 		{
-				Motor_LEFT_Speed(-70);
-			  Motor_RIGHT_Speed(-70);
+				Motor_LEFT_Speed(2000);
+			  Motor_RIGHT_Speed(2000);
 		}
 		if((Fore==0)&&(Back==0)&&(Left==1)&&(Right==0))//左旋
 		{
-				Motor_LEFT_Speed(-70);
-			  Motor_RIGHT_Speed(70);
+				Motor_LEFT_Speed(-2000);
+			  Motor_RIGHT_Speed(2000);
 		}
 		if((Fore==0)&&(Back==0)&&(Left==0)&&(Right==1))//右旋
 		{
-				Motor_LEFT_Speed(70);
-			  Motor_RIGHT_Speed(-70);
+				Motor_LEFT_Speed(2000);
+			  Motor_RIGHT_Speed(-2000);
 		}
 		if((Fore==1)&&(Back==0)&&(Left==1)&&(Right==0))//左前
 		{	
-
+				Motor_LEFT_Speed(-600);
+			  Motor_RIGHT_Speed(-2000);
 		}
 		if((Fore==1)&&(Back==0)&&(Left==0)&&(Right==1))//右前
 		{
+				Motor_LEFT_Speed(-2000);
+			  Motor_RIGHT_Speed(-600);
 		}
 		if((Fore==0)&&(Back==1)&&(Left==1)&&(Right==0))//左后
 		{
-
+				Motor_LEFT_Speed(600);
+			  Motor_RIGHT_Speed(2000);
 		}
 		if((Fore==0)&&(Back==1)&&(Left==0)&&(Right==1))//右后
 		{
-
+				Motor_LEFT_Speed(2000);
+			  Motor_RIGHT_Speed(600);
 		}
 }

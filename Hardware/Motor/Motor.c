@@ -58,7 +58,7 @@ void Motor_PWM_Init(void)
 	TIM_Cmd(TIM2, ENABLE);
 }
 	
-void Motor_LEFT_Speed(int8_t Speed)		
+void Motor_LEFT_Speed(int32_t Speed)		
 {
 	if (Speed >= 0)    //左电机正转
 	{
@@ -74,18 +74,18 @@ void Motor_LEFT_Speed(int8_t Speed)
 	} 
 }
 
-void Motor_RIGHT_Speed(int8_t Speed)		
+void Motor_RIGHT_Speed(int32_t Speed)		
 {
 	if (Speed >= 0)   //右电机正转
 	{
-			BIN1 = 0;
-			BIN2 = 1;
+			BIN1 = 1;
+			BIN2 = 0;
 		  TIM_SetCompare4(TIM2, Speed);
 	}
 	else             //右电机反转
 	{
-			BIN1 = 1;
-			BIN2 = 0;
+			BIN1 = 0;
+			BIN2 = 1;
 		  TIM_SetCompare4(TIM2, Speed);
 	}
 }

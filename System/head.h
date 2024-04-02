@@ -8,5 +8,4 @@
 #include "Motor.h"
 #include "blue_tooth.h"
 #include "OpenMv.h"
-#include "ServoFuntion.h"
 #endif

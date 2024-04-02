@@ -10,6 +10,6 @@
 
 void Motor_GPIO_Init(void);
 void Motor_PWM_Init(void);
-void Motor_LEFT_Speed(int8_t Speed);
-void Motor_RIGHT_Speed(int8_t Speed);
+void Motor_LEFT_Speed(int32_t Speed);
+void Motor_RIGHT_Speed(int32_t Speed);
 #endif

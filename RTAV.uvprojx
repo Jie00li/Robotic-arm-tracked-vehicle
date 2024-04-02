@@ -50,7 +50,7 @@
           <OutputName>RTAV</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Start;.\User;.\Library;.\System;.\Hardware;.\System\sys;.\System\delay;.\Hardware\OLED;.\UserApp;.\Hardware\Motor;.\Hardware\Blue_tooth;.\Hardware\Servo;.\System\usart</IncludePath>
+              <IncludePath>.\Start;.\User;.\Library;.\System;.\Hardware;.\System\sys;.\System\delay;.\Hardware\OLED;.\UserApp;.\Hardware\Motor;.\Hardware\Blue_tooth;.\System\usart</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -738,11 +738,6 @@
               <FileType>1</FileType>
               <FilePath>.\Hardware\Blue_tooth\blue_tooth.c</FilePath>
             </File>
-            <File>
-              <FileName>servo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Hardware\Servo\servo.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -757,11 +752,6 @@
               <FileName>BlueMotor.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\UserApp\BlueMotor.c</FilePath>
-            </File>
-            <File>
-              <FileName>ServoFuntion.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\UserApp\ServoFuntion.c</FilePath>
             </File>
           </Files>
         </Group>

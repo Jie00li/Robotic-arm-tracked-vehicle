@@ -11,11 +11,18 @@
 void Hardware_Init()
 {
 	delay_init();
-	USART1_Init();   //³õÊ¼»¯Openmv´®¿Ú1
+	USART1_Init();   //ï¿½ï¿½Ê¼ï¿½ï¿½Openmvï¿½ï¿½ï¿½ï¿½1
 	OLED_Init();
-	BT_USART3_Init(9600);
+	BT_USART3_Init(9600);  //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3
 	Motor_GPIO_Init();
-	Servo_PWM_Init();
+}
+
+void Oled_flushed()
+{
+		OLED_ShowString(95,1,"NULL",4);
+		delay_ms(5000);
+		OLED_ShowString(95,1,"R   ",4);
+		delay_ms(1000);
 }
 
 int main(void)
@@ -25,7 +32,7 @@ int main(void)
 	OLED_ShowString(1,1,"TargerData:",11);
 	while(1)
 	{ 
-		OLED_ShowNum(95,1,OpenMV_Data,1,1);
+		Oled_flushed();
 		BT_Control();
 	}
 }
