@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "stm32f10x.h": "c",
+        "head.h": "c",
+        "gpio.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "servo.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}
